@@ -263,19 +263,9 @@ const TopNav = ({
             </DropdownMenu>
           </UncontrolledDropdown>
         </div>
-        <div className="position-relative d-none d-none d-lg-inline-block">
-          <a
-            className="btn btn-outline-primary btn-sm ml-2"
-            target="_top"
-            href="https://themeforest.net/cart/configure_before_adding/22544383?license=regular&ref=ColoredStrategies&size=source"
-          >
-            <IntlMessages id="user.buy" />
-          </a>
-        </div>
       </div>
       <a className="navbar-logo" href="/">
-        <span className="logo d-none d-xs-block" />
-        <span className="logo-mobile d-block d-xs-none" />
+        <span class="custom-logo"> MVP</span>
       </a>
 
       <div className="navbar-right">

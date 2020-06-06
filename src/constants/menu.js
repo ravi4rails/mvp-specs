@@ -1,5 +1,5 @@
 const data = [
-  {
+ /* {
     id: 'gogo',
     icon: 'iconsminds-air-balloon-1',
     label: 'menu.gogo',
@@ -37,10 +37,10 @@ const data = [
     label: 'menu.docs',
     to: 'https://gogo-react-docs.coloredstrategies.com/',
     newWindow: true,
-  },
+  }, */
    {
     id: 'adminusers',
-    icon: 'iconsminds-library',
+    icon: 'iconsminds-user',
     label: 'menu.admin-users',
     to: '/app/admin',
   },
