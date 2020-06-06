@@ -164,8 +164,8 @@ class ListPageHeading extends Component {
               <div className="d-block d-md-inline-block pt-1">
                 <UncontrolledDropdown className="mr-1 float-md-left btn-group mb-1">
                   <DropdownToggle caret color="outline-dark" size="xs">
-                    <IntlMessages id="pages.orderby" />
-                    {selectedOrderOption.label}
+                    <IntlMessages id="Order By" />
+                    {/*{selectedOrderOption.label}*/}
                   </DropdownToggle>
                   <DropdownMenu>
                     {orderOptions.map((order, index) => {

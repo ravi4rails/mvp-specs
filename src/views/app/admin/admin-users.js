@@ -196,10 +196,19 @@ class AdminUsers extends Component {
       selectedOrderOption,
       search
     } = this.state;
-    let data ={totalPage: 2,
+    let data ={totalPage: 1,
           totalItem: 10,
           data: [{id:1, firstName:"abc", lastName: "A", email: "abc@gmail.com", phone:"1234567890", img: "/assets/img/profile-pic-l.jpg"},
-                {id:2, firstName:"abdf", lastName: "B", email: "abdf@gmail.com", phone:"12345678911", img: "/assets/img/profile-pic-l.jpg"}]}
+                {id:2, firstName:"abdf", lastName: "B", email: "abdf@gmail.com", phone:"12345678911", img: "/assets/img/profile-pic-l.jpg"},
+                {id:3, firstName:"abc", lastName: "A", email: "abc@gmail.com", phone:"1234567890", img: "/assets/img/profile-pic-l.jpg"},
+                {id:4, firstName:"abdf", lastName: "B", email: "abdf@gmail.com", phone:"12345678911", img: "/assets/img/profile-pic-l.jpg"},
+                {id:5, firstName:"abc", lastName: "A", email: "abc@gmail.com", phone:"1234567890", img: "/assets/img/profile-pic-l.jpg"},
+                {id:6, firstName:"abdf", lastName: "B", email: "abdf@gmail.com", phone:"12345678911", img: "/assets/img/profile-pic-l.jpg"},
+                {id:7, firstName:"abc", lastName: "A", email: "abc@gmail.com", phone:"1234567890", img: "/assets/img/profile-pic-l.jpg"},
+                {id:8, firstName:"abdf", lastName: "B", email: "abdf@gmail.com", phone:"12345678911", img: "/assets/img/profile-pic-l.jpg"},
+                {id:9, firstName:"abc", lastName: "A", email: "abc@gmail.com", phone:"1234567890", img: "/assets/img/profile-pic-l.jpg"},
+                {id:10, firstName:"abdf", lastName: "B", email: "abdf@gmail.com", phone:"12345678911", img: "/assets/img/profile-pic-l.jpg"}]}
+    
     this.setState({
           totalPage: data.totalPage,
           items: data.data,
@@ -261,6 +270,7 @@ class AdminUsers extends Component {
       categories
     } = this.state;
     const { match } = this.props;
+    console.log("Match", match, this.props);
     const startIndex = (currentPage - 1) * selectedPageSize;
     const endIndex = currentPage * selectedPageSize;
 
