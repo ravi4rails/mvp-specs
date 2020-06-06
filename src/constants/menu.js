@@ -42,7 +42,7 @@ const data = [
     id: 'adminusers',
     icon: 'iconsminds-library',
     label: 'menu.admin-users',
-    to: '/app/admin-users',
+    to: '/app/admin',
   },
 ];
 export default data;

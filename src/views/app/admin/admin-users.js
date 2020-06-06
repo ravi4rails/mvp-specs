@@ -270,7 +270,7 @@ class AdminUsers extends Component {
       <Fragment>
         <div className="disable-text-selection">
           <ListPageHeading
-            heading="menu.data-list"
+            heading="Admin Users"
             displayMode={displayMode}
             changeDisplayMode={this.changeDisplayMode}
             handleChangeSelectAll={this.handleChangeSelectAll}

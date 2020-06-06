@@ -7,9 +7,9 @@ const AdminUsers = React.lazy(() =>
 const AdminUsersList= ({ match }) => (
   <Suspense fallback={<div className="loading" />}>
     <Switch>
-      <Redirect exact from={`${match.url}/`} to={`${match.url}/admin-users`} />
+      <Redirect exact from={`${match.url}/`} to={`${match.url}/users`} />
       <Route
-        path={`${match.url}/admin-users`}
+        path={`${match.url}/users`}
         render={(props) => <AdminUsers {...props} />}
       />
       <Redirect to="/error" />

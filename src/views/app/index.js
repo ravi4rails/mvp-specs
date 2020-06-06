@@ -38,7 +38,7 @@ const App = ({ match }) => {
               render={(props) => <BlankPage {...props} />}
             />
              <Route
-                path={`${match.url}/admin-users`}                    
+                path={`${match.url}/admin`}                    
                 render={(props) => <ViewAdminUsers {...props} />}
               />
             <Redirect to="/error" />
