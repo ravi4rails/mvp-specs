@@ -14,6 +14,10 @@ const BlankPage = React.lazy(() =>
   import(/* webpackChunkName: "viwes-blank-page" */ './blank-page')
 );
 
+const ViewAdminUsers = React.lazy(() =>
+  import(/* webpackChunkName: "views-admin-users" */ './admin')
+);
+
 const App = ({ match }) => {
   return (
     <AppLayout>
@@ -33,6 +37,10 @@ const App = ({ match }) => {
               path={`${match.url}/blank-page`}
               render={(props) => <BlankPage {...props} />}
             />
+             <Route
+                path={`${match.url}/admin-users`}                    
+                render={(props) => <ViewAdminUsers {...props} />}
+              />
             <Redirect to="/error" />
           </Switch>
         </Suspense>

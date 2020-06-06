@@ -38,5 +38,11 @@ const data = [
     to: 'https://gogo-react-docs.coloredstrategies.com/',
     newWindow: true,
   },
+   {
+    id: 'adminusers',
+    icon: 'iconsminds-library',
+    label: 'menu.admin-users',
+    to: '/app/admin-users',
+  },
 ];
 export default data;

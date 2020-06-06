@@ -41,6 +41,7 @@ module.exports = {
   'menu.search': 'Search',
   'menu.docs': 'Docs',
   'menu.blank-page': 'Blank Page',
+  'menu.admin-users': 'Admin Users',
 
   /* 04.Error Page */
   'pages.error-title': 'Ooops... looks like an error occurred!',
